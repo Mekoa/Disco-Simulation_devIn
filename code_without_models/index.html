@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscoChaChaCha</title>
+    
+    <!-- Three.js and Dependencies (Global) -->
+    <script src="FromThreeBook/libs/three/three.js"></script>
+    <script src="FromThreeBook/libs/three/controls/TrackballControls.js"></script>
+    <script src="FromThreeBook/libs/util/Stats.js"></script>
+    <script src="FromThreeBook/libs/util/dat.gui.js"></script>
+    <script src="FromThreeBook/src/js/util.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zlibjs@0.3.1/bin/inflate.min.js"></script>
+    <script src="FromThreeBook/libs/three/loaders/OBJLoader.js"></script>
+    <script src="FromThreeBook/libs/three/loaders/FBXLoader.js"></script>
+    <script src="FromThreeBook/libs/three/loaders/AudioLoader.js"></script>
+
+    <style>
+        html, body { margin: 0; height: 100%; }
+        #c { width: 100vw; height: 100vh; display: block; }
+        input[type="file"] {
+            position: absolute; top: 10px; left: 10px; z-index: 100;
+            background: rgba(0,0,0,0.7); color: white; padding: 8px;
+            border-radius: 4px; font-family: sans-serif; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--<input type="file" id="audioInput" accept="audio/*"> -->
+    <canvas id="c"></canvas>
+
+    <input type="file" id="music-upload" accept="audio/*" style="display: none;">
+    <button id="upload-btn" style="margin-top: 10px;">Upload Music</button>
+    <script src="js/skeleton.js"></script>
+    <script  src="js/animation.js"></script>
+    <!-- Main entry point -->
+    <script src="js/main.js"></script>
+</body>
+</html>
